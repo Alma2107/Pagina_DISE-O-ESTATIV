@@ -399,7 +399,7 @@ section {
 .section-title {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #dc9fce;
+    color: #ef9db2;
 }
 
 .section-text {
@@ -408,104 +408,228 @@ section {
     color: #666;
 }
 
-.imagen-box {
-    flex: 1;
+.imagen-box{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.foto-circular {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
+/* MARCO CIRCULAR */
+.video-circular{
+
+    width: 320px;
+    height: 320px;
+
     border-radius: 50%;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+    position: relative;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+    border: 6px solid #fff;
 }
 
+/* VIDEO */
+.video-circular iframe{
+
+    width: 140%;
+    height: 140%;
+
+    position: absolute;
+
+    top: -20%;
+    left: -20%;
+
+    border: none;
+}
 /* ===================================================== */
 /* ---------------- SECCIÓN RESEÑAS -------------------- */
 /* ===================================================== */
-.banner-resenas {
+
+.banner-resenas{
+
     position: relative;
+
+    height: 950px;
+
+    background-image: url("gemini-svg.svg");
+
     background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    padding: 235px 20px 90px;
-    overflow: hidden;
+    background-position: center;
 }
 
-.overlay-resenas {
-    width: 100%;
+/* CONTENEDOR GENERAL */
+.overlay-resenas{
     max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    margin: auto;
     position: relative;
     z-index: 2;
-    transform: translateY(-150px);
 }
 
-.titulo-resenas {
-    font-family: var(--font-display);
-    font-size: 2.7rem;
+/* TITULO */
+.titulo-resenas{
+    text-align: center;
+    font-size: 3.2rem;
     font-weight: 800;
-    color: #2f2f35;
-    margin-bottom: 35px;
-    line-height: 1.1;
+    color: #121212;
+    margin-bottom: 65px;
+    font-family: var(--font-display);
 }
 
-.contenedor-comentarios {
-    display: flex;
+.titulo-resenas span{
+    color: #2563eb;
+}
+
+/* ===================================================== */
+/* GRID COLLAGE */
+/* ===================================================== */
+
+.contenedor-comentarios{
+
+    display: grid;
+
+    grid-template-columns:
+    260px
+    1fr
+    1fr
+    260px;
+
+    grid-template-rows:
+    190px
+    190px;
+
+    gap: 50px;
+
     justify-content: center;
-    align-items: flex-start;
-    gap: 22px;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-top: -10px;
 }
 
-.bloque-comentario {
-    background: rgba(255,255,255,0.95);
-    border-radius: 22px;
-    padding: 22px;
-    width: 290px;
-    min-height: 190px;
-    text-align: left;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-    border: 1px solid rgba(255,255,255,0.7);
-    transition: transform 0.25s ease;
+/* ===================================================== */
+/* CARDS */
+/* ===================================================== */
+
+.bloque-comentario{
+
+    background: rgba(255,255,255,0.96);
+
+    border: 2px solid #ececf3;
+
+    border-radius: 24px;
+
+    padding: 24px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.05);
+
+    transition: 0.35s ease;
+
+    backdrop-filter: blur(10px);
+
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
-.bloque-comentario:hover {
-    transform: translateY(-5px);
+.bloque-comentario:hover{
+    transform: translateY(-8px);
 }
 
-.usuario {
-    font-size: 1.05rem;
-    font-weight: 800;
-    color: #1f2430;
-    margin-bottom: 8px;
+/* ===================================================== */
+/* DIFERENTES TAMAÑOS */
+/* ===================================================== */
+
+/* CUADRADO */
+.card1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    min-height: 225px;
+}
+
+/* RECTANGULO LARGO */
+.card2{
+    grid-column: 2/5;
+    grid-row: 1/2;
+}
+
+/* RECTANGULO GRANDE */
+.card3{
+    grid-column: 1/4;
+    grid-row: 2/4;
+}
+
+/* CUADRADO */
+.card4{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+/* ===================================================== */
+/* USER */
+/* ===================================================== */
+
+.usuario-top{
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 14px;
+    margin-bottom: 15px;
 }
 
-.calificacion-tejidos {
+.usuario-top img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info-user h3{
     font-size: 1rem;
-    margin-bottom: 12px;
+    font-weight: 700;
+    color: #181818;
+    margin-bottom: 4px;
+}
+
+.estrellas{
+    color: #facc15;
+    font-size: 0.9rem;
     letter-spacing: 2px;
 }
 
-.texto-comentario {
-    color: #4f5565;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin: 0;
+.texto-comentario{
+    color: #676767;
+    font-size: 0.96rem;
+    line-height: 1.7;
+}
+
+.fecha{
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #222;
+    margin-top: 15px;
+}
+
+/* ===================================================== */
+/* RESPONSIVE */
+/* ===================================================== */
+
+@media(max-width:950px){
+
+    .contenedor-comentarios{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    .card4{
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .titulo-resenas{
+        font-size: 2.3rem;
+    }
+
 }
 
 /* --- FOOTER COMPACTO --- */
