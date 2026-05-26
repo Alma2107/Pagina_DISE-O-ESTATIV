@@ -23,7 +23,7 @@
 <!-- TOP BAR -->
 <!-- ===================================================== -->
 
-<div class="top-bar">
+<div class="top-bar home-section">
 
     <div class="top-bar-track">
 
@@ -45,7 +45,12 @@
     <div class="nav-container">
 
         <div class="logo">
-            CROCHETERAALMA
+            HECHOCONAMOR
+        </div>
+
+        <!-- BOTON HAMBURGUESA (móvil) -->
+        <div class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+            <span class="hamburger">☰</span>
         </div>
 
         <div class="search-box">
@@ -61,12 +66,6 @@
 
     </div>
 
-    <!-- BOTON HAMBURGUESA -->
-
-    <div class="menu-toggle" id="menu-toggle">
-        ☰
-    </div>
-
     <!-- MENU -->
 
     <nav class="menu" id="menu">
@@ -75,76 +74,8 @@
             <a href="#home" class="menu-item">Inicio</a>
         </div>
 
-        <!-- NIÑAS -->
-
-        <div class="menu-item-wrapper">
-
-            <a href="#ninas" class="menu-item">Niñas</a>
-
-            <div class="submenu">
-
-                <div class="submenu-column">
-
-                    <h4>ROPA</h4>
-
-                    <a href="#">Sueteres</a>
-                    <a href="#">Vestidos</a>
-                    <a href="#">Sudaderas</a>
-                    <a href="#">Chamarras y Chalecos</a>
-                    <a href="#">Polos</a>
-                    <a href="#">Blusas y Camisas</a>
-
-                </div>
-
-                <div class="submenu-column">
-
-                    <h4>ACCESORIOS</h4>
-
-                    <a href="#">Bolsos</a>
-                    <a href="#">Gorros</a>
-                    <a href="#">Cartera</a>
-                    <a href="#">Guantes</a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- NIÑOS -->
-
-        <div class="menu-item-wrapper">
-
-            <a href="#ninos" class="menu-item">Niños</a>
-
-            <div class="submenu">
-
-                <div class="submenu-column">
-
-                    <h4>ROPA</h4>
-
-                    <a href="#">Sueteres</a>
-                    <a href="#">Sudaderas</a>
-                    <a href="#">Chamarras y Chalecos</a>
-                    <a href="#">Polos</a>
-                    <a href="#">Blusas y Camisas</a>
-
-                </div>
-
-                <div class="submenu-column">
-
-                    <h4>ACCESORIOS</h4>
-
-                    <a href="#">Bolsos</a>
-                    <a href="#">Gorros</a>
-                    <a href="#">Mochilas</a>
-                    <a href="#">Guantes</a>
-
-                </div>
-
-            </div>
-
-        </div>
+    
+        
 
         <!-- PELUCHES -->
 
@@ -158,9 +89,9 @@
 
                     <h4>AMIGURUMIS</h4>
 
-                    <a href="#">Pequeños</a>
-                    <a href="#">Medianos</a>
-                    <a href="#">Grandes</a>
+                    <a href="#" class="filter-link" data-filter="pequenos">Pequeños</a>
+                    <a href="#" class="filter-link" data-filter="medianos">Medianos</a>
+                    <a href="#" class="filter-link" data-filter="grandes">Grandes</a>
 
                 </div>
 
@@ -168,9 +99,9 @@
 
                     <h4>DISEÑOS</h4>
 
-                    <a href="#">Animales</a>
-                    <a href="#">Personajes</a>
-                    <a href="#">Formas</a>
+                    <a href="#" class="filter-link" data-filter="animales">Animales</a>
+                    <a href="#" class="filter-link" data-filter="personajes">Personajes</a>
+                    <a href="#" class="filter-link" data-filter="formas">Formas</a>
 
                 </div>
 
@@ -178,10 +109,8 @@
 
                     <h4>COLECCIONES</h4>
 
-                    <a href="#">Edición Limitada</a>
-                    <a href="#">Exclusivos</a>
-                    <a href="#">Personalizados</a>
-
+                    <a href="#" class="filter-link" data-filter="edicion-limitada">Edición Limitada</a>
+                  
                 </div>
 
             </div>
@@ -210,9 +139,9 @@
      BANNER
 ===================================================== -->
 
-<section class="banner" id="home">
+<section class="banner home-section" id="home">
 
-    <img src="ChatGPT Image 8 may 2026, 04_36_25 p.m..png" alt="Banner principal">
+    <img src="img/ChatGPT Image 8 may 2026, 04_36_25 p.m..png" alt="Banner principal">
 
     <!-- ONDA INFERIOR -->
     <div class="wave-divider">
@@ -238,12 +167,11 @@
     </div>
 
 </section>
+<!-- ===================================================== -->
+<!-- PRODUCTOS DESTACADOS -->
+<!-- ===================================================== -->
 
-<!-- =====================================================
-     PRODUCTOS DESTACADOS
-===================================================== -->
-
-<section class="ofertas-section" id="ofertas">
+<section class="ofertas-section home-section" id="ofertas">
 
     <h2 class="titulo-ofertas">
         Productos Destacados
@@ -253,195 +181,425 @@
 
         <div class="slider-track">
 
-            <!-- ================================================= -->
-            <!-- PRIMER BLOQUE -->
-            <!-- ================================================= -->
+    <!-- ================================================= -->
+    <!-- CARD 1 -->
+    <!-- ================================================= -->
 
-            <div class="oferta-card">
+    <div class="oferta-card">
 
-                <div class="precio">$12000</div>
+        <div class="precio">$12000</div>
 
-                <div class="circulo-img">
-                    <img src="img/gorro.jfif" alt="">
+        <div class="circulo-img">
+            <img src="img/gorro.jfif" alt="">
+        </div>
+
+        <div class="barra">
+            <span>Gorro tejido</span>
+            <small>Super cool</small>
+        </div>
+
+    </div>
+
+    <!-- CARD 2 -->
+
+    <div class="oferta-card">
+
+        <div class="precio">$25000</div>
+
+        <div class="circulo-img">
+            <img src="img/bufanda.jfif" alt="">
+        </div>
+
+        <div class="barra">
+            <span>Bufanda tejida</span>
+            <small>Suave y calentita</small>
+        </div>
+
+    </div>
+
+    <!-- CARD 3 -->
+
+    <div class="oferta-card">
+
+        <div class="precio">$30000</div>
+
+        <div class="circulo-img">
+            <img src="img/vestido.jfif" alt="">
+        </div>
+
+        <div class="barra">
+            <span>Vestido crochet</span>
+            <small>Uno de los más lindos</small>
+        </div>
+
+    </div>
+
+    <!-- CARD 4 -->
+
+    <div class="oferta-card">
+
+        <div class="precio">$9500</div>
+
+        <div class="circulo-img">
+            <img src="img/flor.jfif" alt="">
+        </div>
+
+        <div class="barra">
+            <span>Flores decorativas</span>
+            <small>Para primavera</small>
+        </div>
+
+    </div>
+
+    <!-- CARD 5 -->
+
+    <div class="oferta-card">
+
+        <div class="precio">$12000</div>
+
+        <div class="circulo-img">
+            <img src="img/oso.jfif" alt="">
+        </div>
+
+        <div class="barra">
+            <span>Oso amigurumi</span>
+            <small>El más vendido</small>
+        </div>
+
+    </div>
+
+    <!-- ================================================= -->
+    <!-- DUPLICADOS PARA LOOP -->
+    <!-- ================================================= -->
+
+    <div class="oferta-card">
+
+        <div class="precio">$12000</div>
+
+        <div class="circulo-img">
+            <img src="img/gorro.jfif" alt="">
+        </div>
+
+        <div class="barra">
+            <span>Gorro tejido</span>
+            <small>Super cool</small>
+        </div>
+
+    </div>
+
+    <div class="oferta-card">
+
+        <div class="precio">$25000</div>
+
+        <div class="circulo-img">
+            <img src="img/bufanda.jfif" alt="">
+        </div>
+
+        <div class="barra">
+            <span>Bufanda tejida</span>
+            <small>Suave y calentita</small>
+        </div>
+
+    </div>
+
+    <div class="oferta-card">
+
+        <div class="precio">$30000</div>
+
+        <div class="circulo-img">
+            <img src="img/vestido.jfif" alt="">
+        </div>
+
+        <div class="barra">
+            <span>Vestido crochet</span>
+            <small>Uno de los más lindos</small>
+        </div>
+
+    </div>
+
+    <div class="oferta-card">
+
+        <div class="precio">$9500</div>
+
+        <div class="circulo-img">
+            <img src="img/flor.jfif" alt="">
+        </div>
+
+        <div class="barra">
+            <span>Flores decorativas</span>
+            <small>Para primavera</small>
+        </div>
+
+    </div>
+
+    <div class="oferta-card">
+
+        <div class="precio">$12000</div>
+
+        <div class="circulo-img">
+            <img src="img/oso.jfif" alt="">
+        </div>
+
+        <div class="barra">
+            <span>Oso amigurumi</span>
+            <small>El más vendido</small>
+        </div>
+
+    </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="catalogo-page" id="catalogo">
+
+    <aside class="filtros">
+
+        <h3>Filtrar productos</h3>
+
+        <div class="filtro-grupo">
+            <h4>Mostrar</h4>
+            <button type="button" class="filtro-btn active" data-filter="todos" data-group="global">Todos</button>
+        </div>
+
+        <div class="filtro-grupo">
+            <h4>Tamaño</h4>
+            <button type="button" class="filtro-btn" data-filter="pequenos" data-group="size">Pequeños</button>
+            <button type="button" class="filtro-btn" data-filter="medianos" data-group="size">Medianos</button>
+            <button type="button" class="filtro-btn" data-filter="grandes" data-group="size">Grandes</button>
+        </div>
+
+        <div class="filtro-grupo">
+            <h4>Diseño</h4>
+            <button type="button" class="filtro-btn" data-filter="animales" data-group="category">Animales</button>
+            <button type="button" class="filtro-btn" data-filter="personajes" data-group="category">Personajes</button>
+            <button type="button" class="filtro-btn" data-filter="formas" data-group="category">Formas</button>
+        </div>
+
+        <div class="filtro-grupo">
+            <h4>Colección</h4>
+            <button type="button" class="filtro-btn" data-filter="edicion-limitada" data-group="category">Edición Limitada</button>
+            <button type="button" class="filtro-btn" data-filter="exclusivos" data-group="category">Exclusivos</button>
+            <button type="button" class="filtro-btn" data-filter="personalizados" data-group="category">Personalizados</button>
+        </div>
+
+    </aside>
+
+    <div class="catalogo-productos">
+
+        <h2 class="titulo-catalogo">Catálogo</h2>
+
+        <div class="grid-productos">
+
+            <article class="producto-card" data-category="pequenos">
+                <img src="img/gorro.jfif" alt="Gorro tejido">
+                <div class="producto-info">
+                    <h3>Gorro tejido</h3>
+                    <p>Un accesorio cálido para tus días fríos.</p>
+                    <span>$12000</span>
+                </div>
+            </article>
+
+            <article class="producto-card" data-category="medianos mantas">
+                <img src="img/bufanda.jfif" alt="Bufanda tejida">
+                <div class="producto-info">
+                    <h3>Bufanda tejida</h3>
+                    <p>Suave y delicada, ideal para cualquier estilo.</p>
+                    <span>$25000</span>
+                </div>
+            </article>
+
+            <article class="producto-card" data-category="grandes vestidos exclusivos">
+                <img src="img/vestido.jfif" alt="Vestido crochet">
+                <div class="producto-info">
+                    <h3>Vestido crochet</h3>
+                    <p>Perfecto para ocasiones especiales y regalos únicos.</p>
+                    <span>$30000</span>
+                </div>
+            </article>
+
+            <article class="producto-card" data-category="pequenos formas">
+                <img src="img/flor.jfif" alt="Flores decorativas">
+                <div class="producto-info">
+                    <h3>Flores decorativas</h3>
+                    <p>Detalles delicados para ambientar cualquier espacio.</p>
+                    <span>$9500</span>
+                </div>
+            </article>
+
+            <article class="producto-card" data-category="medianos animales exclusivos">
+                <img src="img/oso.jfif" alt="Oso amigurumi">
+                <div class="producto-info">
+                    <h3>Oso amigurumi</h3>
+                    <p>Cómodo y suave, ideal para abrazos infinitos.</p>
+                    <span>$12000</span>
+                </div>
+            </article>
+
+            <article class="producto-card" data-category="grandes mantas personalizados">
+                <img src="img/manta.jfif" alt="Manta cálida">
+                <div class="producto-info">
+                    <h3>Manta cálida</h3>
+                    <p>Perfecta para acurrucarse y acompañar tus noches.</p>
+                    <span>$22000</span>
+                </div>
+            </article>
+
+            <article class="producto-card" data-category="grandes bebè">
+                <img src="img/overol.jfif" alt="Overol bebé">
+                <div class="producto-info">
+                    <h3>Overol bebé</h3>
+                    <p>Confort y estilo para los primeros pasos.</p>
+                    <span>$18000</span>
+                </div>
+            </article>
+
+            <article class="producto-card" data-category="medianos animales personajes edicion-limitada">
+                <img src="img/dinosaurio.jfif" alt="Dinosaurio crochet">
+                <div class="producto-info">
+                    <h3>Dinosaurio crochet</h3>
+                    <p>Un diseño divertido para los fans de los animales.</p>
+                    <span>$14500</span>
+                </div>
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- CUIDADOS -->
+<!-- ===================================================== -->
+
+<section class="cuidados-section home-section" id="cuidados">
+
+    <!-- LINEA DECORATIVA SUPERIOR -->
+    <div class="linea-decorativa"></div>
+
+    <!-- OVERLAY / FONDO -->
+
+    <div class="cuidados-overlay">
+
+        <h2 class="titulo-cuidados">
+            Cuidados
+        </h2>
+
+        <p class="subtitulo-cuidados">
+            Para que tu peluche tejido te acompañe por mucho tiempo
+        </p>
+
+        <div class="cuidados-grid">
+
+            <!-- ITEM 1 -->
+            <div class="cuidado-card">
+
+                <div class="icono-cuidado">
+                    <img src="img/iconolavaramano.png" alt="Lavar a mano">
                 </div>
 
-                <div class="barra">
-                    <span>Gorro tejido</span>
-                    <small>Super cool</small>
-                </div>
+                <h3>
+                    Lavar a mano
+                </h3>
+
+                <p>
+                    Usar agua fría y jabón suave
+                </p>
 
             </div>
 
-            <div class="oferta-card">
+            <!-- ITEM 2 -->
+            <div class="cuidado-card">
 
-                <div class="precio">$25000</div>
-
-                <div class="circulo-img">
-                    <img src="img/bufanda.jfif" alt="">
+                <div class="icono-cuidado">
+                    <img src="img/iconocolgat.png" alt="Secar en plano">
                 </div>
 
-                <div class="barra">
-                    <span>Bufanda tejida</span>
-                    <small>Suave y calentita</small>
-                </div>
+                <h3>
+                    Secar en plano
+                </h3>
+
+                <p>
+                    No colgar para evitar deformaciones
+                </p>
 
             </div>
 
-            <div class="oferta-card">
+            <!-- ITEM 3 -->
+            <div class="cuidado-card">
 
-                <div class="precio">$30000</div>
-
-                <div class="circulo-img">
-                    <img src="img/vestido.jfif" alt="">
+                <div class="icono-cuidado">
+                    <img src="img/iconosecadora.png" alt="No usar secadora">
                 </div>
 
-                <div class="barra">
-                    <span>Vestido crochet</span>
-                    <small>Uno de los más lindos</small>
-                </div>
+                <h3>
+                    No usar secadora
+                </h3>
+
+                <p>
+                    El calor puede dañar el tejido
+                </p>
 
             </div>
 
-            <div class="oferta-card">
+            <!-- ITEM 4 -->
+            <div class="cuidado-card">
 
-                <div class="precio">$9500</div>
-
-                <div class="circulo-img">
-                    <img src="img/flor.jfif" alt="">
+                <div class="icono-cuidado">
+                    <img src="img/iconolavandina.png" alt="No usar lavandina">
                 </div>
 
-                <div class="barra">
-                    <span>Flores decorativas</span>
-                    <small>Para primavera</small>
-                </div>
+                <h3>
+                    No usar lavandina
+                </h3>
 
-            </div>
-
-            <div class="oferta-card">
-
-                <div class="precio">$12000</div>
-
-                <div class="circulo-img">
-                    <img src="img/oso.jfif" alt="">
-                </div>
-
-                <div class="barra">
-                    <span>Oso amigurumi</span>
-                    <small>El más vendido</small>
-                </div>
-
-            </div>
-
-            <!-- ================================================= -->
-            <!-- DUPLICADOS PARA LOOP -->
-            <!-- ================================================= -->
-
-            <div class="oferta-card">
-
-                <div class="precio">$12000</div>
-
-                <div class="circulo-img">
-                    <img src="img/gorro.jfif" alt="">
-                </div>
-
-                <div class="barra">
-                    <span>Gorro tejido</span>
-                    <small>Super cool</small>
-                </div>
-
-            </div>
-
-            <div class="oferta-card">
-
-                <div class="precio">$25000</div>
-
-                <div class="circulo-img">
-                    <img src="img/bufanda.jfif" alt="">
-                </div>
-
-                <div class="barra">
-                    <span>Bufanda tejida</span>
-                    <small>Suave y calentita</small>
-                </div>
-
-            </div>
-
-            <div class="oferta-card">
-
-                <div class="precio">$30000</div>
-
-                <div class="circulo-img">
-                    <img src="img/vestido.jfif" alt="">
-                </div>
-
-                <div class="barra">
-                    <span>Vestido crochet</span>
-                    <small>Uno de los más lindos</small>
-                </div>
-
-            </div>
-
-            <div class="oferta-card">
-
-                <div class="precio">$9500</div>
-
-                <div class="circulo-img">
-                    <img src="img/flor.jfif" alt="">
-                </div>
-
-                <div class="barra">
-                    <span>Flores decorativas</span>
-                    <small>Para primavera</small>
-                </div>
-
-            </div>
-
-            <div class="oferta-card">
-
-                <div class="precio">$12000</div>
-
-                <div class="circulo-img">
-                    <img src="img/oso.jfif" alt="">
-                </div>
-
-                <div class="barra">
-                    <span>Oso amigurumi</span>
-                    <small>El más vendido</small>
-                </div>
+                <p>
+                    Mantiene los colores intactos
+                </p>
 
             </div>
 
         </div>
 
     </div>
+
+    <!-- LINEA DECORATIVA INFERIOR -->
     <div class="linea-decorativa"></div>
 
 </section>
-
 <!-- ===================================================== -->
 <!-- RESEÑAS -->
 <!-- ===================================================== -->
 
-<section class="banner-resenas">
+<section class="banner-resenas home-section">
 
     <div class="overlay-resenas">
 
         <h2 class="titulo-resenas">
-            Lo que dicen nuestros clientes 
+            Lo que dicen nuestros clientes
         </h2>
 
         <div class="contenedor-comentarios">
 
             <!-- CARD 1 -->
+
             <div class="bloque-comentario card1">
 
-                <div class="usuario-top">
+             <div class="usuario-top">
 
-                    <img src="botreseña2.jfif" alt="">
+                    <img src="img/botreseña2.jfif" alt="">
 
                     <div class="info-user">
-                        <h3>Margaret Guadalupe de la Mercedes</h3>
-                        <div class="estrellas">★★★★★</div>
+
+                        <h3>
+                            Margaret Guadalupe de la Mercedes
+                        </h3>
+
+                        <div class="estrellas">
+                            ★★★★★
+                        </div>
+
                     </div>
 
                 </div>
@@ -457,47 +615,63 @@
             </div>
 
             <!-- CARD 2 -->
+
             <div class="bloque-comentario card2">
 
                 <div class="usuario-top">
 
-                    <img src="botreseña1.jfif" alt="">
+                    <img src="img/botreseña1.jfif" alt="">
 
                     <div class="info-user">
-                        <h3>Laura Lena</h3>
-                        <div class="estrellas">★★★★★</div>
+
+                        <h3>
+                            Laura Lena
+                        </h3>
+
+                        <div class="estrellas">
+                            ★★★★★
+                        </div>
+
                     </div>
 
                 </div>
 
                 <p class="texto-comentario">
-                   Le compre unos peluches para el baby shower de mi hija,y fueron un exito total! Todas las mamas me preguntaban donde los habia comprado!
-                </p>
-
-                <span class="fecha">
-                    Mayo 15, 2025
+                     Le compre unos peluches para el baby shower de mi hija,y fueron un exito total! Todas las mamas me preguntaban donde los habia comprado! </p>
+                
+                 <span class="fecha">
+                 Mayo 15, 2025
                 </span>
 
             </div>
 
             <!-- CARD 3 -->
+
             <div class="bloque-comentario card3">
 
                 <div class="usuario-top">
 
-                    <img src="botreseña3.jfif" alt="">
+                    <img src="img/botreseña3.jfif" alt="">
 
                     <div class="info-user">
-                        <h3>Claudia Isabel Lazarte</h3>
-                        <div class="estrellas">★★★★★</div>
+
+                        <h3>
+                            Claudia Isabel Lazarte
+                        </h3>
+
+                        <div class="estrellas">
+                            ★★★★★
+                        </div>
+
                     </div>
 
                 </div>
 
                 <p class="texto-comentario">
-                    Ojala hubiera mas sitios como este,donde podes comprar productos de calidad hechos a mano con precios razonables y encima! lo que
+                     Ojala hubiera mas sitios como este,donde podes comprar productos de calidad hechos a mano con precios razonables y encima! lo que
                     mas me llamo la atencion fue como cada uno de los productos viene con una etiqueta de los pasos que tenes que seguir
                     para cuidarlos y que te duren mucho tiempo,segun el tipo de hilo con el que se trabajo. AME, super atentos
+                </p>
                 </p>
 
                 <span class="fecha">
@@ -507,21 +681,29 @@
             </div>
 
             <!-- CARD 4 -->
+
             <div class="bloque-comentario card4">
 
                 <div class="usuario-top">
 
-                    <img src="botreseña4.jfif" alt="">
+                    <img src="img/botreseña4.jfif" alt="">
 
                     <div class="info-user">
-                        <h3>Maria Gonzales</h3>
-                        <div class="estrellas">★★★</div>
+
+                        <h3>
+                            Maria Gonzales
+                        </h3>
+
+                        <div class="estrellas">
+                            ★★★
+                        </div>
+
                     </div>
 
                 </div>
 
                 <p class="texto-comentario">
-                   En mis tiempos se hacia con los pies...
+                    En mis tiempos se hacia con los pies...
                 </p>
 
                 <span class="fecha">
@@ -533,7 +715,6 @@
         </div>
 
     </div>
-    
 
 </section>
 
@@ -541,7 +722,7 @@
 <!-- SOBRE NOSOTROS -->
 <!-- ===================================================== -->
 
-<section id="sobre-nosotros" class="sobre-nosotros-section">
+<section id="sobre-nosotros" class="sobre-nosotros-section home-section">
 
     <div class="sobre-content-container">
 
@@ -553,9 +734,30 @@
 
             <p class="section-text">
 
-                Somos una pequeña tienda artesanal dedicada
-                a crear prendas y peluches tejidos a mano
-                con muchísimo amor y dedicación.
+    Hecho Con Amor nació entre ovillos de lana,
+    agujas y muchísima dedicación.
+    
+    Todo comenzó como un pequeño hobby,
+    creando prendas y peluches tejidos
+    para amigos y familiares.
+    
+    Con el tiempo, cada creación empezó
+    a llevar una parte de nuestra historia:
+    el cariño por lo artesanal,
+    la paciencia de cada puntada
+    y la ilusión de hacer algo único.
+    
+    Hoy seguimos trabajando a mano,
+    cuidando cada detalle para que
+    cada peluche, vestido o accesorio
+    llegue a vos con la misma calidez
+    con la que fue creado.
+    
+    Más que productos,
+    buscamos crear recuerdos,
+    abrazos suaves y sonrisas
+    que duren muchísimo tiempo.
+
 
             </p>
 
@@ -579,7 +781,9 @@
 
     <div class="linea-decorativa"></div>
 
+
 </section>
+
 
 </main>
 
@@ -608,7 +812,7 @@
                 <li>
 
                     <img 
-                    src="logoubicacion.png" 
+                    src="img/logoubicacion.png" 
                     alt="Ubicación" 
                     class="logo-lista">
 
@@ -621,7 +825,7 @@
                 <li>
 
                     <img 
-                    src="logogmail.png" 
+                    src="img/logogmail.png" 
                     alt="Gmail" 
                     class="logo-lista">
 
@@ -634,7 +838,7 @@
                 <li>
 
                     <img 
-                    src="logotelefono.png" 
+                    src="img/logotelefono.png" 
                     alt="Teléfono" 
                     class="logo-lista">
 
@@ -647,7 +851,7 @@
                 <li>
 
                     <img 
-                    src="logoinstagram.png" 
+                    src="img/logoinstagram.png" 
                     alt="Instagram" 
                     class="logo-lista">
 
@@ -708,67 +912,205 @@
 
 </footer>
 
-<!-- ===================================================== -->
-<!-- SCRIPT -->
-<!-- ===================================================== -->
-
 <script>
 
-/* ========================= */
-/* MENU HAMBURGUESA */
-/* ========================= */
+/* ====================================== */
+/* MENU HAMBURGUESA + CATALOGO DINÁMICO */
+/* ====================================== */
 
 const toggle = document.getElementById("menu-toggle");
 const menu = document.getElementById("menu");
+const homeSections = document.querySelectorAll(".home-section");
+const catalogSection = document.getElementById("catalogo");
+const filterLinks = document.querySelectorAll(".filter-link");
+const filtroButtons = document.querySelectorAll(".filtro-btn");
+const productCards = document.querySelectorAll(".producto-card");
+const inicioBtn = document.querySelector('.menu-item[href="#home"]');
+const tituloCatalogo = document.querySelector(".titulo-catalogo");
+
+const sizes = ["pequenos", "medianos", "grandes"];
+const categories = ["animales", "personajes", "formas", "edicion-limitada", "exclusivos", "personalizados"];
+let currentSize = "todos";
+let currentCategory = "todos";
+const filterNames = {
+    todos: "Catálogo",
+    pequenos: "Pequeños",
+    medianos: "Medianos",
+    grandes: "Grandes",
+    animales: "Animales",
+    exclusivos: "Exclusivos",
+    personalizados: "Personalizados",
+    "edicion-limitada": "Edición Limitada",
+    personajes: "Personajes",
+    formas: "Formas"
+};
+
+function menuClose() {
+    menu.classList.remove("active");
+}
+
+function setActiveButtons() {
+    filtroButtons.forEach(btn => {
+        const group = btn.dataset.group;
+        if (group === "global") {
+            btn.classList.toggle("active", currentSize === "todos" && currentCategory === "todos");
+            return;
+        }
+        if (group === "size") {
+            btn.classList.toggle("active", btn.dataset.filter === currentSize);
+            return;
+        }
+        if (group === "category") {
+            btn.classList.toggle("active", btn.dataset.filter === currentCategory);
+            return;
+        }
+    });
+}
+
+function updateCatalogTitle() {
+    const parts = [];
+    if (currentSize !== "todos") parts.push(filterNames[currentSize]);
+    if (currentCategory !== "todos") parts.push(filterNames[currentCategory]);
+    tituloCatalogo.textContent = parts.length ? `Catálogo · ${parts.join(" · ")}` : "Catálogo";
+}
+
+function applyFilter() {
+    if (!productCards.length) return;
+
+    productCards.forEach(card => {
+        const categories = card.dataset.category.split(" ");
+        const sizeMatch = currentSize === "todos" || categories.includes(currentSize);
+        const categoryMatch = currentCategory === "todos" || categories.includes(currentCategory);
+        card.style.display = sizeMatch && categoryMatch ? "" : "none";
+    });
+
+    setActiveButtons();
+    updateCatalogTitle();
+}
+
+function openCatalog() {
+    homeSections.forEach(section => section.style.display = "none");
+    catalogSection.classList.add("active");
+    catalogSection.style.display = "grid";
+    catalogSection.style.opacity = "1";
+    menuClose();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function showCatalog(filter = "todos") {
+    if (sizes.includes(filter)) {
+        currentSize = filter;
+        currentCategory = "todos";
+    } else if (categories.includes(filter)) {
+        currentCategory = filter;
+        currentSize = "todos";
+    } else {
+        currentSize = "todos";
+        currentCategory = "todos";
+    }
+
+    openCatalog();
+    applyFilter();
+}
+
+function volverHome() {
+    catalogSection.classList.remove("active");
+    catalogSection.style.display = "none";
+    currentSize = "todos";
+    currentCategory = "todos";
+    homeSections.forEach(section => section.style.display = "");
+    applyFilter();
+    menuClose();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
 
 toggle.addEventListener("click", () => {
     menu.classList.toggle("active");
 });
 
-/* ========================= */
+const submenuWrappers = document.querySelectorAll(".menu-item-wrapper");
+submenuWrappers.forEach(wrapper => {
+    const submenu = wrapper.querySelector(".submenu");
+    const menuItem = wrapper.querySelector(".menu-item");
+    if (!submenu || !menuItem) return;
+
+    menuItem.addEventListener("click", e => {
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            wrapper.classList.toggle("open");
+        }
+    });
+});
+
+filterLinks.forEach(link => {
+    link.addEventListener("click", e => {
+        e.preventDefault();
+        const filter = link.dataset.filter;
+        showCatalog(filter);
+    });
+});
+
+filtroButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const filter = button.dataset.filter;
+        const group = button.dataset.group;
+
+        if (group === "global") {
+            currentSize = "todos";
+            currentCategory = "todos";
+        } else if (group === "size") {
+            currentSize = filter;
+        } else if (group === "category") {
+            currentCategory = filter;
+        }
+
+        openCatalog();
+        applyFilter();
+    });
+});
+
+if (inicioBtn) {
+    inicioBtn.addEventListener("click", e => {
+        e.preventDefault();
+        volverHome();
+    });
+}
+
+/* ====================================== */
 /* CARRUSEL INTERACTIVO */
-/* ========================= */
+/* ====================================== */
 
 const track = document.querySelector(".slider-track");
 const ofertas = document.querySelector(".ofertas-contenedor");
-
 let position = 0;
 let speed = 1.5;
 
-/* DIRECCION SEGUN MOUSE */
+if (ofertas) {
+    ofertas.addEventListener("mousemove", (e) => {
+        const rect = ofertas.getBoundingClientRect();
+        const mouseX = e.clientX - rect.left;
+        const mitad = rect.width / 2;
 
-ofertas.addEventListener("mousemove", (e) => {
+        speed = mouseX < mitad ? -1.5 : 1.5;
+    });
+}
 
-    const rect = ofertas.getBoundingClientRect();
-    const mouseX = e.clientX - rect.left;
-    const mitad = rect.width / 2;
-
-    if(mouseX < mitad){
-        speed = -1.5;
-    } else {
-        speed = 1.5;
-    }
-
-});
-
-/* LOOP INFINITO */
-
-function animate(){
-
+function animate() {
     position -= speed;
 
-    if(position < -2000){
+    if (position < -2000) {
         position = 0;
     }
 
-    if(position > 0){
+    if (position > 0) {
         position = -2000;
     }
 
-    track.style.transform = `translateX(${position}px)`;
+    if (track) {
+        track.style.transform = `translateX(${position}px)`;
+    }
 
     requestAnimationFrame(animate);
-
 }
 
 animate();
